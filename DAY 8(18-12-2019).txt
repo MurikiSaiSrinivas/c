@@ -1,0 +1,297 @@
+Flavours of C:
+---------------------
+Name of C                  Platform
+ANSI                        Unix
+Dynamic                     Linux
+Turbo C                     MS-DOS
+Borland C                   Windows
+Microsoft C               Windows
+ProC                          Oracle
+
+Background Files in TurboC/DevC:
+--------------------------------------------
+1. College.c               -            source code
+2. College.bak           -            backup file
+3. College.obj           -            object file
+4. College.exe           -            executable file
+
+Variable declarations
+----------------------------
+I                    -                    P                    -                       O
+
+gets()             -to read a string with multiple words
+scanf("[\n%s]",name);
+
+fflush(stdin);
+
+Format Specifiers:
+-------------------------
+%d                 int
+%f                 float
+%c                 char
+%s                 string
+%ld                long int
+%u                 unsigned
+%i                  int
+
+Escape Sequences
+-------------------------
+\n              -            new line
+\t              -            new tab
+\b              -            backspace
+\a              -            alert
+\\              -            backslash
+\'              -            single quote
+\''             -           double quote
+ 
+Relational Operators
+----------------------------
+==	
+!=	
+>	
+<	
+>=	
+<=	 
+
+Control Statements:
+---------------------------
+1. Conditional Control Statements
+	*if
+	*if else
+	*else if(nested if)                   
+
+2.Case Control Statement 
+	*switch   
+
+we can pass arguments to the main that is called as command line arguments*
+---------------------------------------------------------------------------------------------------
+int main(int argc,char *argv[])
+{
+**CODE**
+}
+#include<stdio.h>
+
+#include<stdlib.h>
+
+
+int main(int argc,char *argv[])
+
+{
+    
+int a,b;
+    
+if(argc<0)
+      
+printf("\n Invalid no. of args");
+    
+else
+    
+{
+        
+a=atoi(argv[1]);
+        
+b=atoi(argv[2]);
+        
+printf("\n sum is : %d",a+b);
+    
+}
+
+}
+
+Questions:
+1.To check the given  no is Even or Odd
+2.To check the given character is Upper case or Lower case or Digit
+Program
+#include<stdio.h>
+
+
+int main()
+
+{
+    
+char a;
+    
+printf("enter the character:");
+    
+scanf("%c",&a);
+    
+if(48<=a&&a<=57)
+      
+printf("number");
+    
+else if(65<=a&&a<=90)
+      
+printf("uppercase");
+    
+else
+      
+printf("lower case");
+      
+    
+return 0;  
+
+}
+
+
+3.To find the large number from three given numbers
+4.To check the given character is vowel or consonant
+5.To check whether a number is divisible by 5 and 11
+Program:
+#include<stdio.h>
+
+
+int main()
+
+{
+    
+int a;
+    
+printf("enter the number:");
+    
+scanf("%d",&a);
+    
+if(a%5==0&&a%11==0)
+      
+printf("yes");
+    
+else
+      
+printf("no");
+      
+    
+return 0;  
+
+}
+
+6.To check the triangle validity when angles are given
+Program:
+#include<stdio.h>
+
+
+int main()
+
+{
+
+int a,b,c;
+    
+printf("enter 3 number:");
+    
+scanf("%d%d%d",&a,&b,&c);
+    
+if(a+b+c==180)
+      
+printf("yes");
+    
+else
+      
+printf("no");
+      
+    
+return 0;  
+
+}
+
+
+7.To print weekday(name)based on day number
+Program:
+#include<stdio.h>
+
+
+int main()
+
+{
+    
+int a;
+    
+printf("enter a number:");
+    
+scanf("%d",&a);
+    
+switch(a)
+    
+{
+       
+case 1:
+        
+printf("Monday");
+        
+break;
+       
+case 2:
+        
+printf("Tuesday");
+        
+break;
+        
+case 3:
+        
+printf("Wednesday");
+        
+break;
+        
+case 4:
+        
+printf("Thursday");
+        
+break;       
+        
+case 5:
+        
+printf("Friday");
+        
+break;
+        
+case 6:
+        
+printf("Saturday");
+        
+break;
+        
+case 7:
+        
+printf("Sunday");
+        
+break;
+        
+default:
+        
+printf("invalid");
+        
+break;
+   
+}
+    
+return 0;  
+
+}
+
+
+8.To check the given year is a leap year or not
+Program:
+#include<stdio.h>
+
+
+int main()
+
+{
+    
+int a;
+    
+printf("enter a number:");
+    
+scanf("%d",&a);
+    
+if((a%4==0&&a%100!=0)||(a%400==0))
+      
+printf("leap");
+    
+else
+      
+printf("not a leap");
+      
+    
+return 0;  
+
+}
+
+    
